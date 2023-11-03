@@ -15,7 +15,7 @@ def list_instances(compute, project, zone):
     return result['items'] if 'items' in result else None
 # [END list_instances]
 
-x = list_instances(compute,'mickey-331609' ,'europe-west2-a')
+x = list_instances(compute, 'manikanta-396303', 'us-central1-a')
 print(x)
 
 def create_instance(compute, project, zone, name, bucket):
@@ -91,6 +91,6 @@ def create_instance(compute, project, zone, name, bucket):
         zone=zone,
         body=config).execute()
 
-create_instance(compute,'mickey-331609' ,'europe-west2-a', 'pyvm','pybucket')
+create_instance(compute,'manikanta-396303' ,'us-central1-a', 'pyvm','pybucket')
 
 
