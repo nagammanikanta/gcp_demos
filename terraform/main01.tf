@@ -3,7 +3,7 @@
 
 # Configure the Google Cloud provider
 provider "google" {
-  project = "driven-strength-000000"
+  project = ""
   region  = "us-east1-b"
 }
 
@@ -15,7 +15,7 @@ resource "google_compute_instance" "example" {
 
   boot_disk {
     initialize_params {
-      image = "ubuntu-1804-lts"
+      image = "ubuntu-23.04-lts"
     }
   }
 
