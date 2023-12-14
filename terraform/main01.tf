@@ -3,7 +3,7 @@
 
 # Configure the Google Cloud provider
 provider "google" {
-  project = ""
+  project = "leafy-summer-405104"
   region  = "us-east1-b"
 }
 
